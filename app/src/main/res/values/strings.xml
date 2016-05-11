@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">DiscoveringMalta</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_logged_in">Logged In</string>
+    <string name="facebook_app_id">1505538929742482</string>
+
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_with_fb">Sign in with Facebook</string>
+    <string name="register_login">Register / Login</string>
+    <string name="skip_login">Skip login</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="logout">Logout</string>
+
+    <string name="enter_credentials">Enter your Credentials</string>
+    <string name="welcome">Welcome!</string>
+
+    <string name="failed_title">Oops!</string>
+    <string name="failed_content">Something went wrong. Please try again.</string>
+    <string name="try_again">Try Again</string>
+
+    <string name="progress_title">Loading</string>
+    <string name="progress_content">Please wait...</string>
+    <string name="date_of_arrival">Date of Arrival:</string>
+    <string name="date_button">Set Date</string>
+    <string name="number_of_days">Number of Days:</string>
+    <string name="budget_to_spend">Budget to Spend (€):</string>
+    <string name="type_of_holiday">Type of Holiday:</string>
+
+</resources>

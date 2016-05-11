@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.emanbuhagiar.discoveringmalta.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_of_arrival"
+        android:id="@+id/labelStartDate"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/startDate"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_button"
+        android:id="@+id/dateButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignEnd="@+id/numDays"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/number_of_days"
+        android:id="@+id/labelNumDays"
+        android:layout_below="@+id/labelStartDate"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/numDays"
+        android:layout_below="@+id/startDate"
+        android:layout_marginTop="25dp"
+        android:layout_alignLeft="@+id/startDate"
+        android:layout_alignStart="@+id/startDate"
+        android:layout_alignEnd="@+id/checkboxLayout"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/budget_to_spend"
+        android:id="@+id/labelBudget"
+        android:layout_below="@+id/labelNumDays"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:id="@+id/budget"
+        android:layout_below="@+id/numDays"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@+id/startDate"
+        android:layout_alignStart="@+id/startDate"
+        android:layout_alignEnd="@+id/checkboxLayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_of_holiday"
+        android:id="@+id/labelType"
+        android:layout_below="@+id/labelBudget"
+        android:layout_marginTop="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/budget"
+        android:orientation="vertical"
+        android:id="@+id/checkboxLayout"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp">
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/sendButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textSize="40px"
+        android:padding="15dip"
+        android:width="300dp"
+        android:background="@color/darker_blue"/>
+
+</RelativeLayout>
